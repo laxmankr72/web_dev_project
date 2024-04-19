@@ -21,6 +21,7 @@ nav{
 .logo{
     width: 140px;
     cursor: pointer;
+    border-radius: 3px 10px;
 }
 .nav-links li{
     list-style: none;
@@ -236,3 +237,22 @@ nav{
 .footer p{
     padding-bottom: 15px;
 }
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    background: #fff;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-radius: 2px;
+    transform: translateX(50%);
+    
+}
+
+/* ---------------for small screen devices------------------- */
