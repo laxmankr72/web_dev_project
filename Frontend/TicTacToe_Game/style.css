@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(95, 160, 145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 30%;
+    border: 1px solid #a08b5f;
+    background-color: rgb(128, 127, 125);
+    border-radius: 15px;
+    box-shadow:  9px 10px 20px 0px rgba(84,50,84,1);
+}
+h1{
+  position: absolute;
+    top: 10%;
+}
+.game{
+    top: 30%;
+    display: grid;
+    position: absolute;
+    /* background-color: black; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    gap: 8px;
+}
+.box{
+    /* position: absolute; */
+    height: 4em;
+    width: 4em;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    color: brown;
+    box-shadow: 9px 10px 20px 0px rgb(117, 78, 117);
+    background-color: rgb(70, 125, 70);
+}
+#reset-btn{
+    position: absolute;
+    margin-top: 30%;
+    background-color: rgb(204, 176, 140);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 9px 10px 20px 0px rgb(117, 78, 117);
+}
+
+.winanc{
+    position: absolute;
+    top:10% ;
+}
+.newgame{
+    position: absolute;
+    top:15% ;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(71, 226, 102);
+}
+
+.hide{
+    display: none;
+}
