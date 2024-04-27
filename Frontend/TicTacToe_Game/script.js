@@ -57,17 +57,33 @@ const showWinner = (winner) => {
     disabledBoxes();
 }
 
-const checkWinner = () =>{
-    for(let pattern of winnerpattern){
+
+const drawgame = () => {
+    winnerance.innerText = `Game Draw`;
+    winnerance.classList.remove('hide');
+    newGameBtn.classList.remove('hide');
+    disabledBoxes();
+};
+
+const checkWinner = () => {
+    let draw = true; 
+    for (let pattern of winnerpattern) {
         let pos1val = boxes[pattern[0]].innerText;
         let pos2val = boxes[pattern[1]].innerText;
         let pos3val = boxes[pattern[2]].innerText;
 
-        if(pos1val != "" && pos2val != "" && pos3val != ""){
-            if(pos1val === pos2val && pos2val === pos3val){
+        if (pos1val !== "" && pos2val !== "" && pos3val !== "") {
+            if (pos1val === pos2val && pos2val === pos3val) {
                 showWinner(pos1val);
+                draw = false; 
+                break; 
             }
+        } else {
+            draw = false; 
         }
+    }
+    if (draw) {
+        drawgame();
     }
 };
 
