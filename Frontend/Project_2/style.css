@@ -1,0 +1,198 @@
+ body {
+        font-family: 'Monosert', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+    }
+
+    nav {
+        display: flex;
+        background-color: #FCAF02;
+        height: 70px;
+        width: 100%;
+        position:sticky;
+        top: 0;
+    }
+    .Nav-divs{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+        gap: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    #logo p{
+        font-size: 30px;
+        font-weight: 700;
+        margin-left: -60%;
+    }
+
+    #logo span{
+        text-decoration: underline;
+    }
+    #nav-links a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
+    #nav-links a:hover{
+        text-decoration: underline;
+    }
+
+    #main{
+        display: flex;
+        height: 30em;
+        width: 100%;
+        color: white;
+        margin-top: 3.5em;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    #main-text{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 6em;
+    }
+    #main-text h1{
+        font-size: 64px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    #main-text p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5em;
+        width: 80%;
+        margin-top: -1em;
+    }
+
+    #main-text button{
+        width: 323px;
+        height: 66px;
+        font-size: 32px;
+        font-weight: 700;
+        color: black;
+        background-color: #FCAF02;
+        border: none;
+        border-radius: 500px;
+        cursor: pointer;
+       
+    }
+
+    #main-image{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+    }
+    #main-image img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        transform: rotateY(180deg);
+        margin-top: -3em;
+        margin-right: 8em;
+    }
+
+    #contact-us{
+        width: 100%;
+        height: 40em;
+        color:#FCAF02;
+        display: flex;
+        flex-direction: column;
+        margin-left: 6em;
+    }
+
+    #contact-us h1{
+        font-size: 52px;
+        font-weight: 700;
+        margin-top: 1em;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        margin-top: 2em;
+        gap: 0.8em;
+    }
+    form input{
+        font-size: 18px;
+        background: transparent;
+        border: 2px solid #FCAF02;
+        border-radius: 50px;
+        color: #FCAF02;
+        height: 40px;
+        outline: none;
+    }
+    form input::placeholder{
+        color: #FCAF02;
+        padding-left: 1em;
+    }
+    #phone{
+        width: 48%;
+    }
+    #city{
+    width: 48%;
+    margin-left: 51%;
+    margin-top: -3.2em;
+    }
+    #button{
+        width: 20%;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        background-color: #FCAF02;
+        border: none;
+        border-radius: 500px;
+        cursor: pointer;
+        margin-top: 1em;
+        margin-left: 40%;
+    } 
+
+ #footer{
+        width: 83%;
+        height:450px;
+        color: #FCAF02;
+        margin-top: 0.5em;
+        margin-left: 6em;
+    }
+    table{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        border-collapse: collapse;
+        border: 1px solid #FCAF02;
+    }
+
+    table tr td{
+        border-left: 1px solid #FCAF02;
+        font-size: 28px;
+        font-weight: 200;
+    }
+     table tr th{
+        border-left: 1px solid #FCAF02;
+        font-size: 28px;
+        font-weight: 200;
+    }
+     table tr th{
+        border-bottom: 1px solid #FCAF02;
+    }
+    table tr:last-child{
+        border-bottom: 1px solid #FCAF02;
+    }
+
+    tfoot{
+        background-color: #FCAF02;
+        color: black;
+    }
